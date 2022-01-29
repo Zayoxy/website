@@ -1,0 +1,33 @@
+/* Import fonts */
+@font-face {
+    font-family: NotoSans-Bold;
+    src: url("../fonts/NotoSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: NotoSans;
+    src: url("../fonts/NotoSans-Regular.ttf");
+}
+/* End of importation */
+
+body {
+    background: url("../img/thunderstorm-3440450_1920.jpg"); /* https://pixabay.com/users/jplenio-7645255/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3440450 */
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: NotoSans;
+    color: white;
+
+    display: grid;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+h1, h2 {
+    font-family: NotoSans-Bold;
+}
+
+#presentation {
+    /* grid-row-start: 2; doesn't work for some reason*/
+    grid-column-start: 2; /* Works well */
+}
