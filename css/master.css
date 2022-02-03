@@ -11,9 +11,14 @@
 /* End of importation */
 
 body {
-    background: url("../img/thunderstorm-3440450_1920.jpg"); /* https://pixabay.com/users/jplenio-7645255/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3440450 */
-    background-repeat: no-repeat;
+    /* https://pixabay.com/users/jplenio-7645255/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3440450 */
+    background: url("../img/thunderstorm-3440450_1920.jpg") no-repeat fixed; /* fixed for the resize of the website */
     background-size: cover;
+
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 
     font-family: NotoSans-Bold;
     color: white;
@@ -22,40 +27,21 @@ body {
 header {
     text-align: center;
     border: solid red;
-    margin-bottom: 10px;
+    margin-bottom: 1%;
 }
 
 main {
     display: grid;
     border: solid red;
+    vertical-align: middle;
     grid-template-rows: repeat(3, 33.3%);
     grid-template-columns: repeat(3, 33.3%);
 }
 
-main div {
-    background-color: #8813e7;
-}
-
 footer {
     text-align: center;
+    width: 100%;
     border: solid red;
-}
-
-#test1 {
-    grid-column: 1;
-    grid-row: 1;
-}
-
-#presentation {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-#test2 {
-    grid-column: 3;
-    grid-row: 1;
-}
-#test3 {
-    grid-column: 2;
-    grid-row: 2;
+    position: fixed;
+    bottom: 0px;
 }
