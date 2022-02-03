@@ -3,7 +3,7 @@ RewriteEngine On
 
 # Rewrite the URL only if it's the host is (www.)zayoxy.ch or website.local and in http instead of https
 RewriteCond %{HTTP_HOST} ^(www\.)?zayoxy\.ch$ [NC,OR]
-RewriteCond %{HTTP_HOST} ^(www\.)?website\.local$ [NC]
+RewriteCond %{HTTP_HOST} ^(www\.)?zayoxy-ch\.local$ [NC]
 RewriteCond %{HTTPS} !=on
 
 # Rewrite the URL (calling RewriteRule reset the cond for the next Rule :D)
