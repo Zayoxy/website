@@ -1,4 +1,16 @@
 #presentation {
+    display: grid;
     text-align: center;
+    grid-column: 2;
+    grid-template-columns: repeat(2, 50%);
+}
+
+#presentation #logo {
+    border-radius: 100%;
+    width: 100%;
+    grid-column: 1;
+}
+
+#presentation #infos {
     grid-column: 2;
 }
