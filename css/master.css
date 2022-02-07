@@ -11,9 +11,27 @@
 /* End of importation */
 
 header {
+    display: grid;
+    grid-template-columns: 50% 50%;
     margin: 0;
     padding: 0;
     margin-bottom: 5%;
+}
+
+nav {
+    grid-column: 1;
+}
+
+#socialmedias-placeholder {
+    grid-column: 2;
+    position: fixed;
+    right: 0;
+}
+
+.glyphs {
+    max-width: 60px;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -30,33 +48,29 @@ body {
     color: white;
 }
 
-footer {
-    margin: 0;
-    padding: 0;
-    margin-top: 5%;
-    text-align: center;
-}
-
 h1,h2,h3,p {
     margin: 0;
     padding: 0;
 }
 
-nav ul {
+.header-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
+.header-list li {
     display: inline;
 }
 
-nav ul li a {
+.header-list li a {
     text-decoration: none;
-    background-color: rgba(95, 95, 95, 0.5);
     padding: 6px;
     font-size: 21px;
+}
+
+nav ul li a {
+    background-color: rgba(95, 95, 95, 0.5);
 }
 
 a {
@@ -65,14 +79,6 @@ a {
 
 a:hover {
     color: rgb(175, 175, 175);
-}
-
-@media screen and (min-width: 1280px) {
-    footer {
-        position: fixed;
-        bottom: 0px;
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 1280px) {
