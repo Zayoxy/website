@@ -1,3 +1,9 @@
+main {
+    display: grid;
+    grid-template-rows: repeat(3, 33.3%);
+    grid-template-columns: repeat(3, 33.3%);
+}
+
 #presentation {
     display: grid;
     text-align: center;

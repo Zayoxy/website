@@ -10,6 +10,12 @@
 }
 /* End of importation */
 
+header {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5%;
+}
+
 body {
     /* https://pixabay.com/users/jplenio-7645255/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3440450 */
     background: url("../img/thunderstorm-3440450_1920.jpg") no-repeat fixed; /* fixed for the resize of the website */
@@ -24,35 +30,41 @@ body {
     color: white;
 }
 
-header {
+footer {
+    margin: 0;
+    padding: 0;
+    margin-top: 5%;
     text-align: center;
-    border: solid red;
-    margin-bottom: 1%;
+}
+
+h1,h2,h3,p {
+    margin: 0;
+    padding: 0;
 }
 
 nav ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
 }
 
 nav ul li a {
     text-decoration: none;
+    background-color: rgba(95, 95, 95, 0.5);
+    padding: 6px;
+    font-size: 21px;
+}
+
+a {
     color: white;
 }
 
-nav ul li a:hover {
+a:hover {
     color: rgb(175, 175, 175);
-}
-
-main {
-    display: grid;
-    border: solid red;
-    grid-template-rows: repeat(3, 33.3%);
-    grid-template-columns: repeat(3, 33.3%);
-}
-
-footer {
-    text-align: center;
-    border: solid red;
 }
 
 @media screen and (min-width: 1280px) {
