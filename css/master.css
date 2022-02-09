@@ -10,56 +10,26 @@
 }
 /* End of importation */
 
+/* Apply to all the elements in the website */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
 header {
     display: grid;
     grid-template-columns: 50% 50%;
-    margin: 0;
-    padding: 0;
     margin-bottom: 5%;
-}
-
-nav {
-    grid-column: 1;
-}
-
-#socialmedias-placeholder {
-    grid-column: 2;
-    position: fixed;
-    right: 0;
-}
-
-.glyphs {
-    max-width: 60px;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    /* https://pixabay.com/users/jplenio-7645255/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3440450 */
-    background: url("../img/thunderstorm-3440450_1920.jpg") no-repeat fixed; /* fixed for the resize of the website */
-    background-size: cover;
-
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-
-    font-family: NotoSans-Bold;
-    color: white;
-}
-
-h1,h2,h3,p {
-    margin: 0;
-    padding: 0;
 }
 
 .header-list {
     list-style-type: none;
-    margin: 10px;
-    padding: 10px;
     background-color: rgba(95, 95, 95, 0.5);
     border-radius: 5px;
     width: fit-content;
+    margin: 10px;
+    padding: 10px;
 }
 
 .header-list li {
@@ -68,8 +38,44 @@ h1,h2,h3,p {
 
 .header-list li a {
     text-decoration: none;
-    padding: 6px;
     font-size: 21px;
+}
+
+nav {
+    grid-column: 1;
+}
+
+nav ul li a {
+    padding: 10px;
+}
+
+#socialmedias-placeholder {
+    grid-column: 2;
+}
+
+#socialmedias {
+    display: block;
+    float: right;
+}
+
+#socialmedias li {
+    margin: 5px 0 5px 5px;
+}
+
+.glyphs {
+    width: 40px;
+    margin: 5px;
+}
+/* End of header */
+
+body {
+    /* https://pixabay.com/users/jplenio-7645255/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3440450 */
+    background: url("../img/thunderstorm-3440450_1920.jpg") no-repeat fixed; /* fixed for the resize of the website */
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    font-family: NotoSans-Bold;
+    color: white;
 }
 
 a {
