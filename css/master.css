@@ -10,24 +10,83 @@
 }
 /* End of importation */
 
-body {
-    background: url("../img/thunderstorm-3440450_1920.jpg"); /* https://pixabay.com/users/jplenio-7645255/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3440450 */
-    background-repeat: no-repeat;
-    background-size: cover;
+/* Apply to all the elements in the website */
+* {
+    margin: 0;
+    padding: 0;
+}
 
-    font-family: NotoSans;
-    color: white;
-
+/* Header */
+header {
     display: grid;
-    grid-template-rows: 33.3% 33.3% 33.3%;
-    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 5%;
 }
 
-h1, h2 {
+.header-list {
+    list-style-type: none;
+    background-color: rgba(95, 95, 95, 0.5);
+    border-radius: 5px;
+    width: fit-content;
+    margin: 10px;
+    padding: 10px;
+}
+
+.header-list li {
+    display: inline;
+}
+
+.header-list li a {
+    text-decoration: none;
+    font-size: 21px;
+}
+
+nav {
+    grid-column: 1;
+}
+
+nav ul li a {
+    padding: 10px;
+}
+
+#socialmedias-placeholder {
+    grid-column: 2;
+}
+
+#socialmedias {
+    display: block;
+    float: right;
+}
+
+#socialmedias li {
+    margin: 5px 0 5px 5px;
+}
+
+.glyphs {
+    width: 40px;
+    margin: 5px;
+}
+/* End of header */
+
+body {
+    /* https://pixabay.com/users/jplenio-7645255/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3440450 */
+    background: url("../img/thunderstorm-3440450_1920.jpg") no-repeat fixed; /* fixed for the resize of the website */
+    background-size: cover;
+    height: 100%;
+    width: 100%;
     font-family: NotoSans-Bold;
+    color: white;
 }
 
-#presentation {
-    /* grid-row-start: 2; doesn't work for some reason*/
-    grid-column-start: 2; /* Works well */
+a {
+    color: white;
+}
+
+a:hover {
+    color: rgb(175, 175, 175);
+}
+
+@media screen and (max-width: 1280px) {
+    h1 { font-size: 25px; }
+    h2 { font-size: 20px; }
 }
