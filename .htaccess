@@ -21,5 +21,8 @@ RewriteRule ^(.*)$ $1.html [NC,L]
 # Disable directory listing
 Options -Indexes
 
+# Disable iframe injection
+Header set X-Frame-Options "sameorigin"
+
 # Redirect the 404 error on error.html
 ErrorDocument 404 /error.html
