@@ -1,16 +1,14 @@
 # START URL REWRITING
 RewriteEngine On
 
-# The only HTTPS is already done by my domain and if I force it with URL rewriting it breaks the website
-# Rewrite the URL only if it's the host is (www.)zayoxy.ch or website.local and in http instead of https
-# RewriteCond %{HTTP_HOST} ^(www\.)?zayoxy\.ch$ [NC,OR]
-# RewriteCond %{HTTP_HOST} ^(www\.)?zayoxy-ch\.local$ [NC]
-# RewriteCond %{HTTPS} !=on
+# Checking if the requests are in HTTPS
+RewriteCond %{HTTP:X-Forwarded-Proto} !https [OR]
+RewriteCond %{HTTP_HOST} !^www. [NC]
 
-# Rewrite the URL (calling RewriteRule reset the cond for the next Rule :D)
-# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,NE,R=301]
+# If not, rewriting the url in HTTPS
+RewriteRule (.*) https://www.zayoxy.ch/$1 [R=301,L]
 
-# Check if it's not a directory and that it's a html file
+# Conditions for beautfying the URL, specifying html files only
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 
@@ -24,5 +22,5 @@ Options -Indexes
 # Disable iframe injection
 Header set X-Frame-Options "sameorigin"
 
-# Redirect the 404 error on error.html
-ErrorDocument 404 /error.html
+# Redirect the 404 error on error
+ErrorDocument 404 /error
