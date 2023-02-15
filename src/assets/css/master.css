@@ -1,0 +1,53 @@
+/* Import fonts */
+@font-face {
+  font-family: NotoSans-Bold;
+  src: url("../fonts/NotoSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: NotoSans;
+  src: url("../fonts/NotoSans-Regular.ttf");
+}
+/* End of importation */
+
+/* Apply to all the elements in the website */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header-list {
+  list-style-type: none;
+  background-color: rgba(95, 95, 95, 0.5);
+  border-radius: 5px;
+  width: fit-content;
+  margin: 10px;
+  padding: 10px;
+}
+
+.header-list li {
+  display: inline;
+}
+
+.header-list li a {
+  text-decoration: none;
+  font-size: 21px;
+}
+/* End of header */
+
+body {
+  /* https://pixabay.com/users/jplenio-7645255/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3440450 */
+  background: url("../images/background.jpg") no-repeat fixed; /* fixed for the resize of the website */
+  background-size: cover;
+  font-family: NotoSans-Bold;
+  color: white;
+}
+
+@media screen and (max-width: 1280px) {
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
