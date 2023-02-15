@@ -10,3 +10,13 @@ import { RouterLink } from "vue-router";
     </ul>
   </nav>
 </template>
+
+<style scoped>
+nav {
+  grid-column: 1;
+}
+
+a {
+  padding: 10px;
+}
+</style>

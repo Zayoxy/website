@@ -34,14 +34,6 @@
   font-size: 21px;
 }
 
-nav {
-  grid-column: 1;
-}
-
-nav ul li a {
-  padding: 10px;
-}
-
 .glyphs {
   width: 40px;
   margin: 5px;
@@ -52,8 +44,6 @@ body {
   /* https://pixabay.com/users/jplenio-7645255/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3440450 */
   background: url("../images/background.jpg") no-repeat fixed; /* fixed for the resize of the website */
   background-size: cover;
-  height: 100%;
-  width: 100%;
   font-family: NotoSans-Bold;
   color: white;
 }
