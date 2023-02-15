@@ -16,13 +16,6 @@
   padding: 0;
 }
 
-/* Header */
-header {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  margin-bottom: 5%;
-}
-
 .header-list {
   list-style-type: none;
   background-color: rgba(95, 95, 95, 0.5);
@@ -47,19 +40,6 @@ nav {
 
 nav ul li a {
   padding: 10px;
-}
-
-#socialmedias-placeholder {
-  grid-column: 2;
-}
-
-#socialmedias {
-  display: block;
-  float: right;
-}
-
-#socialmedias li {
-  margin: 5px 0 5px 5px;
 }
 
 .glyphs {

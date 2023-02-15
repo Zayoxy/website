@@ -26,3 +26,18 @@
     </li>
   </ul>
 </template>
+
+<style scoped>
+#socialmedias {
+  grid-column: 2;
+}
+
+#socialmedias {
+  display: block;
+  float: right;
+}
+
+#socialmedias li {
+  margin: 5px 0 5px 5px;
+}
+</style>

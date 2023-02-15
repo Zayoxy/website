@@ -3,3 +3,5 @@
 <template>
   <h1>In dev</h1>
 </template>
+
+<style scoped></style>
