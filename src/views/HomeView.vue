@@ -1,7 +1,17 @@
 <script setup lang="ts"></script>
 
 <template>
-  <h1>In dev</h1>
+  <div id="presentation">
+    <img id="logo" src="@/assets/images/zayoxy.jpg" alt="Zayoxy.jpg" />
+    <h1>Alexandre Guillaume</h1>
+    <h2>Studying computer science</h2>
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+#presentation {
+  width: 100%;
+  grid-column: 2;
+  text-align: center;
+}
+</style>
