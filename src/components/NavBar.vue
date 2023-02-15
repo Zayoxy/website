@@ -17,6 +17,11 @@ nav {
 }
 
 a {
+  color: white;
   padding: 10px;
+}
+
+a:hover {
+  color: rgb(175, 175, 175);
 }
 </style>

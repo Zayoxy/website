@@ -34,6 +34,11 @@
   grid-column: 2;
 }
 
+.glyphs {
+  width: 40px;
+  margin: 5px;
+}
+
 ul {
   display: block;
   float: right;

@@ -14,4 +14,11 @@
   grid-column: 2;
   text-align: center;
 }
+
+#logo {
+  border-radius: 100%;
+  border: solid 5px black;
+  max-width: 70%;
+  min-width: 50%;
+}
 </style>
